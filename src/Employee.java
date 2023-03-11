@@ -2,7 +2,7 @@ public class Employee {
     private String abbreviation;
     private int department;
     private int salary;
-    private static int idCount = 0;
+    private static int idCount = 1;
     private int id;
     public Employee(String abbreviation, int department, int salary) {
         this.abbreviation = abbreviation;
@@ -34,7 +34,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "ФИО" + abbreviation+ " , отдел" + department+ " , зарплата" + salary + " , ID" + idCount;
+        return "ФИО" + abbreviation+ " , отдел" + department+ " , зарплата" + salary + " , ID" + id;
     }
 }
 
